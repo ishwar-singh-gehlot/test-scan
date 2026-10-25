@@ -118,10 +118,7 @@ import { useLogin } from "@refinedev/core";
 
 export const Login = () => {
   // highlight-next-line
-  const {
-    mutate,
-    mutation: { isPending },
-  } = useLogin();
+  const { mutate, isPending } = useLogin();
 
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -275,10 +272,7 @@ import { useLogout } from "@refinedev/core";
 
 export const Header = () => {
   // highlight-next-line
-  const {
-    mutate,
-    mutation: { isPending },
-  } = useLogout();
+  const { mutate, isPending } = useLogout();
 
   return (
     <>
